@@ -1,0 +1,118 @@
+.bicicletas-bg {
+    background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicletas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bicicleta-img {
+    display: grid;
+
+}
+
+.bicicleta-img img {
+    grid-area: 1/1;
+}
+
+.bicicleta-img span {
+    grid-area: 1/1;
+    place-self: start end;
+    margin-top: 20px;
+    background: var(--cor-12);
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Podemos colocar o span (R$ 2499 e etc) usando position absolute e relative para que fique dentro da imagem da bicicleta como representado no arquivo do figma. Entretanto utilziaremos outro método.
+
+.bicicleta-img {
+    position: relative
+}
+
+.bicicleta-img span {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+*/
+
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+    grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+    margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    margin-bottom: 8px;
+}
+
+.bicicletas p {
+    margin-bottom: 32px;
+}
+
+.bicicletas a {
+    place-self: end;
+}
+
+.bicicletas li {
+    display: flex;
+    align-items: center;
+}
+
+.bicicletas li +li {
+    margin-top: 16px;
+}
+
+.bicicletas-conteudo img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+    .bicicletas-bg {
+        background: var(--cor-11);
+    }
+
+    .bicicletas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bicicletas-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicletas ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+    }
+
+    .bicicletas a {
+        place-self: start;
+    }
+}

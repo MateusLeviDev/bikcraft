@@ -11,7 +11,7 @@
 }
 
 .font-2-s {
-    font: 400 0.75rem/1.35 "Roboto", sans-serif;
+    font: 400 1.125rem/1.5 "Roboto", sans-serif;
 }
 
 .font-1-m,
@@ -28,7 +28,7 @@
 }
 
 .font-1-l {
-    font: 400 1.5/1.5 "Poppins",;
+    font: 400 1.5/1.5 "Poppins", sans-serif;
 } 
 
 .font-2-l, 
