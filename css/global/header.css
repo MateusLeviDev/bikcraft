@@ -39,7 +39,9 @@ display: inline-block para que por padrão quando um intem cair abaixo do outro 
     position: absolute;
 }
 
-.header-menu a:hover:after {
+/* a.ativo funções para deixar o hover ativado usado pelo js */
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
     width: 100%;
 }
 
