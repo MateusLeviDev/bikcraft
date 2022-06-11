@@ -89,6 +89,10 @@ box-shadow: x | y | blur | tamanho da fonte | cor*/
 }
 
 .titulo {
+    background: url(../../img/decorador/top-right.svg) no-repeat top right 20px;
+}
+
+.titulo p {
     margin-bottom: 4px;
 }
 
